@@ -1,5 +1,5 @@
 {
-  "version": "1.9.14",.
+  "version": "1.9.14",
   "description": "A decentralized bitcoin exchange network",
   "homepage": "https://bisq.network",
   "license": "AGPL-3.0",
@@ -9,17 +9,11 @@
       "hash": "2b7e5c57d703e96494b0ae47c3a0beeaef62b75523ad54418985987fc75c373a"
     }
   },
-  
-  
   "pre_install": [
-        "Invoke-Expression -Command "7z x -t# Bisq-64bit-1.9.14.exe *.msi"",
-		"Start-Sleep -Seconds 4",
-		"Invoke-Expression -Command "lessmsi x 2.msi""
-        
-    ],
-  
-  
-  
+    "Invoke-Expression -Command '7z x -t# Bisq-64bit-1.9.14.exe *.msi'",
+    "Start-Sleep -Seconds 4",
+    "Invoke-Expression -Command 'lessmsi x 2.msi'"
+  ],
   "shortcuts": [
     [
       "warpinator-windows_0.4.1\\Warpinator.exe",
@@ -31,7 +25,7 @@
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/bisq-network/bisq/releases/download/v$version/Bisq-64bit-1.9.14.exe"				
+        "url": "https://github.com/bisq-network/bisq/releases/download/v$version/Bisq-64bit-1.9.14.exe"
       }
     }
   }
